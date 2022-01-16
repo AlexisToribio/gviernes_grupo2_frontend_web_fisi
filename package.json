@@ -1,7 +1,7 @@
 {
   "name": "sistema-gestion-eventos-academicos",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emotion/react": "^11.5.0",
     "framer-motion": "^4.1.17",
