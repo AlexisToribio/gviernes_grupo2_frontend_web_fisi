@@ -45,17 +45,8 @@ export default function CardEvent({
           </div>
         )}
 
-        <Link
-          className="button_price"
-          to={
-            location.pathname !== "/"
-              ? location.pathname === "/dashboard/myevents"
-                ? `/dashboard/myevents/details/${id}`
-                : `/dashboard/events/details/${id}`
-              : `/details/${id}`
-          }
-        >
-          {personalEvents ? "Ver detalles" : "Inscribirme"}
+        <Link className="button_price" to={`/dashboard/events/details/${id}`}>
+          Ver detalles
         </Link>
       </div>
     </div>

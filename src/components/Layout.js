@@ -12,7 +12,7 @@ export default function Layout({ children }) {
 
   const signOut = () => {
     localStorage.removeItem("token");
-    history.push("/login");
+    history.push("/");
   };
 
   return (

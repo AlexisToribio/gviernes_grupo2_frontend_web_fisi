@@ -1,9 +1,5 @@
 import "./styles/DetailsEvent.css";
-export default function DetailsEventComponent({
-  event,
-  activeModal = null,
-  general = true,
-}) {
+export default function DetailsEventComponent({ event }) {
   return (
     <div className="details_event">
       <img className="logo" src={event?.logo} alt="logo" />
@@ -43,11 +39,6 @@ export default function DetailsEventComponent({
               </p>
             </div>
           </div>
-          {general && (
-            <div className="container_button_inscription">
-              <button onClick={activeModal}>Inscribirse</button>
-            </div>
-          )}
         </div>
       </div>
       <h4 className="more_information_title">Más información</h4>

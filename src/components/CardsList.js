@@ -24,18 +24,6 @@ export default function CardsList({ title, listEvents, location, loading }) {
             Icon={BiDockTop}
           />
         )}
-        {/* {listEvents?.length > 0 ? (
-          listEvents.map((event) => (
-            <CardEvent key={event.id} {...event} location={location} />
-          ))
-        ) : (
-          <EmptyListComponent
-            message="No se encontraron eventos"
-            linkMessage="Ir a mi perfil"
-            to="/dashboard/profile"
-            Icon={BiDockTop}
-          />
-        )} */}
       </div>
     </div>
   );

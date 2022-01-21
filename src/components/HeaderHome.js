@@ -17,7 +17,7 @@ function HeaderHome() {
         </div>
         <div className="nav_links">
           {!user ? (
-            <Link className="btn_link" to="/login">
+            <Link className="btn_link" to="/">
               Iniciar Sesión
             </Link>
           ) : (

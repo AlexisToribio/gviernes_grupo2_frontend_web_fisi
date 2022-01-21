@@ -12,6 +12,7 @@ const RequestList = lazy(() => import("./pages/RequestList"));
 const Events = lazy(() => import("./pages/Events"));
 const RequestsListDetails = lazy(() => import("./pages/RequestsListDetails"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+const EventsDetails = lazy(() => import("./pages/EventsDetails"));
 
 function App() {
   const [_, dispatch] = useUser();
@@ -41,6 +42,11 @@ function App() {
             exact
             path="/dashboard/profile"
             component={UserDetails}
+          />
+          <PrivateRoute
+            exact
+            path="/dashboard/events/details/:id"
+            component={EventsDetails}
           />
           <PrivateRoute exact path="/dashboard/events" component={Events} />
           <PrivateRoute

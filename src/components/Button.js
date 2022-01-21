@@ -1,7 +1,7 @@
 export default function Button({
   text,
-  loading,
-  classes = "",
+  loading = false,
+  classes = "button_price",
   functionToExecute = null,
   cancel = false,
 }) {
