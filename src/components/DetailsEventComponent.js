@@ -2,7 +2,16 @@ import "./styles/DetailsEvent.css";
 export default function DetailsEventComponent({ event }) {
   return (
     <div className="details_event">
-      <img className="logo" src={event?.logo} alt="logo" />
+      <img
+        className="logo"
+        // src={
+        //   event?.logo.length < 1
+        //     ? "https://www.toulouselautrec.edu.pe/sites/default/files/imagenes/cursos/toulouse-cursos-org-eventos-desktop-37.jpg"
+        //     : event?.logo
+        // }
+        src="https://www.toulouselautrec.edu.pe/sites/default/files/imagenes/cursos/toulouse-cursos-org-eventos-desktop-37.jpg"
+        alt="logo"
+      />
       <div className="flex">
         <div className="principal">
           <div className="content">

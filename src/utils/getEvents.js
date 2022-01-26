@@ -7,11 +7,12 @@ export const getEventsHome = () => {
 };
 
 export const getEventsDashboard = () => {
+  console.log({ token });
   return fetch(`${API_URL}/dashboard/events`, {
     method: "GET",
     mode: "cors",
     headers: {
-      token: token,
+      token,
     },
   }).then((res) => res.json());
 };

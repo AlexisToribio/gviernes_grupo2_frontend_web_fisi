@@ -13,18 +13,21 @@ export default function EventsDetails() {
   const [event, setEvent] = useState();
 
   useEffect(() => {
-    getEventDetails(params.id)
+    const token = localStorage.getItem("token");
+    getEventDetails({ id: params.id, token })
       .then((data) => {
+        console.log(data);
         setEvent(data);
       })
       .catch((err) => console.error(err.message));
   }, []);
 
   const changeStateOfEvent = () => {
-    changeEventState({ id: params.id })
+    const token = localStorage.getItem("token");
+    changeEventState({ id: params.id, token })
       .then((res) => {
-        if (res.message) {
-          console.log(res);
+        console.log(res);
+        if (res.message === "Updated requet's status") {
           ht.push("/dashboard/events");
         }
       })
@@ -35,7 +38,12 @@ export default function EventsDetails() {
       <TitleSection title={`${event?.titulo} / Detalles`} />
       <div className="container_details container_radius">
         <DetailsEventComponent event={event} />
-        <div style={{ width: "300px", margin: "1emauto" }}>
+        <div
+          style={{
+            width: "20%",
+            margin: "2em 0 2em auto",
+          }}
+        >
           <Button
             functionToExecute={changeStateOfEvent}
             text="Revisar evento"

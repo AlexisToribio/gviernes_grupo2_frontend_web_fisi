@@ -136,7 +136,7 @@ export default function UserDetails() {
             />
             <div className="row">
               <InputComponent
-                value={user?.nombre}
+                value={user?.nombres}
                 nameInput="nombre"
                 setUser={setUser}
                 user={user}

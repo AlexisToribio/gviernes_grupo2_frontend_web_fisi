@@ -13,7 +13,7 @@ function Header({ user }) {
           <img src={user.foto} alt="" className="profile" />
         )}
         <p className="username">
-          {user ? `${user.nombre} ${user.apellidos}` : "Nombre completo"}
+          {user ? `${user.nombres} ${user.apellidos}` : "Nombre completo"}
         </p>
         <Dropdown redirect={true} />
       </div>
