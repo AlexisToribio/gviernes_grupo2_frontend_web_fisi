@@ -14,7 +14,12 @@ export default function CardEvent({
   return (
     <div className="single_card" key={id}>
       <div className="img_container">
-        <img className="img_event" src={logo} alt="" />
+        <img
+          className="img_event"
+          src={logo}
+          // src="https://www.toulouselautrec.edu.pe/sites/default/files/imagenes/cursos/toulouse-cursos-org-eventos-desktop-37.jpg"
+          alt=""
+        />
       </div>
       <div className="container_title">
         <p className="event_title">{titulo}</p>

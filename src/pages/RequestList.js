@@ -24,7 +24,8 @@ export default function RequestList() {
     const token = localStorage.getItem("token");
     if (token) {
       setLoading(true);
-      getRequestsAdmin(token)
+      console.log(token);
+      getRequestsAdmin({ token })
         .then((data) => {
           setLoading(false);
           setRequests(data);

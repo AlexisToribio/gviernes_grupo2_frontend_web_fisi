@@ -15,8 +15,9 @@ function Events() {
     // setLoading(true);
     getEvents()
       .then((data) => {
+        console.log(data);
         setLoading(false);
-        setEvents(data.events);
+        setEvents(data.data);
       })
       .catch((err) => {
         setLoading(false);

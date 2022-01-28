@@ -48,7 +48,12 @@ export default function RequestDetailsComponent({ request }) {
           </div>
         </div>
         <div className="request_logo">
-          <img className="logo" src={request?.logo} alt="Logo de evento" />
+          <img
+            className="logo"
+            src={request?.logo}
+            // src="https://www.toulouselautrec.edu.pe/sites/default/files/imagenes/cursos/toulouse-cursos-org-eventos-desktop-37.jpg"
+            alt="Logo de evento"
+          />
           <p>Logo del evento</p>
         </div>
       </div>

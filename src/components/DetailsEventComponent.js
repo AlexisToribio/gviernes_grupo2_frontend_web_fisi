@@ -51,7 +51,6 @@ export default function DetailsEventComponent({ event }) {
           <h3>Coordinador</h3>
           <p>{event?.nombre_coordinador}</p>
         </div>
-        <img src={event?.foto_coordinador} alt="coordinator profile" />
       </div>
     </div>
   );
