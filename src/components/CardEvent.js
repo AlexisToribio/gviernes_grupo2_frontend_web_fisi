@@ -16,12 +16,8 @@ export default function CardEvent({
       <div className="img_container">
         <img
           className="img_event"
-          // src={
-          //   logo.length < 1
-          //     ? "https://www.toulouselautrec.edu.pe/sites/default/files/imagenes/cursos/toulouse-cursos-org-eventos-desktop-37.jpg"
-          //     : logo
-          // }
-          src="https://www.toulouselautrec.edu.pe/sites/default/files/imagenes/cursos/toulouse-cursos-org-eventos-desktop-37.jpg"
+          src={logo}
+          // src="https://www.toulouselautrec.edu.pe/sites/default/files/imagenes/cursos/toulouse-cursos-org-eventos-desktop-37.jpg"
           alt=""
         />
       </div>
