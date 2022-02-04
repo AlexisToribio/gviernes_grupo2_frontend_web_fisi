@@ -27,6 +27,7 @@ export default function RequestList() {
       console.log(token);
       getRequestsAdmin({ token })
         .then((data) => {
+          console.log(data);
           setLoading(false);
           setRequests(data);
         })

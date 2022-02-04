@@ -1,4 +1,3 @@
-export const API_URL = process.env.REACT_APP_API;
+export const API_URL = "https://gviernes-g2-backend-fisi.herokuapp.com";
 
 // LOCALHOST --> "http://localhost:4000"
-// API --> "https://sgea-api.herokuapp.com";
